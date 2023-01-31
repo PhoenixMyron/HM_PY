@@ -13,7 +13,7 @@ if len(str_number) != 6:
     print("Номер должен быть шестизначным")
 else:
     number = int(str_number)
-    sum = 0
+    suma = 0
     i = 0
     half_len = number_len / 2
     while number > 0:
@@ -21,10 +21,10 @@ else:
         number_right = number % 10
         number //= 10
         if i <= half_len:
-            sum += number_right
+            suma += number_right
         else:
-            sum -= number_right
-    if sum == 0:
+            suma -= number_right
+    if suma == 0:
         print("yes")
     else:
         print("no")
